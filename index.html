@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Raul Gallegos</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Raul Gallegos">
+	<meta name="keywords" content="raul,administrator,manager,engineer">
+	<meta name="description" content="Professional with abilities in increasing process productivity and solving administrative problems through effective strategic planning, observation and usage of informatic tools.">
+	<meta name="robots" content="index,follow">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="layout.css" media="screen">
+
+	<style type="text/css">
+		#popup{
+			z-index: 1;
+			width: 900px;
+			height: 600px;
+			border: 0.5px;
+			border-style: solid;
+			border-color: rgba(0, 0, 0, .3);
+			border-radius: 10px;
+			box-shadow: 0 12px 16px white;
+            background: linear-gradient(135deg, rgba(51,56,66,0.7), rgba(0,0,0,0));     
+            backdrop-filter: blur(10px);
+            margin-top: 140px;
+		}
+
+		#popup:hover{
+			background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+		}
+
+		.popelements{
+			display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            justify-items: center;
+		}
+
+		.popelements p{
+			font-size: 25px;
+			color: #292D32;
+		}
+
+		#popup input{
+			width: 200px;
+			height: 100px;
+			border: 0.5px;
+			border-style: outset;
+			border-color: rgba(255, 255, 255, .3);
+			border-radius: 10px;
+			font-size: 30px;
+			background-color: greenyellow;
+		}
+
+		#popup input:hover{
+			background-color: steelblue;
+			transition: all 550ms ease;
+		}
+
+		.popimage{
+			background-size: cover;
+			border-radius: 10px;
+		}
+
+		#popup img{
+			max-width: 100%;
+			border-radius: 10px;
+			opacity: .7;
+		}
+
+		.cards-grid{
+	        display: flex;
+	        box-sizing: border-box;
+	        background-size: cover;
+	        margin-top: 0px;
+	        align-items: center;
+            align-content: center;
+            justify-content: center;
+            justify-items: center;
+        }
+
+        .flip-card{
+	        width: 300px;
+	        height: 300px;
+	        perspective: 2000px;
+	        margin: 10px;
+        }
+
+        .flip-card-inner{
+	        position: relative;
+	        width: 100%;
+	        height: 100%;
+	        box-shadow: 0 5px 5px rgba(0, 0, 0, .8);
+	        border: 1px;
+	        border-color: #b4c2cc;
+	        border-style: solid;
+	        border-radius: 20px;
+	        transition: all 550ms ease;
+	        transform-style: preserve-3d;
+        }
+
+        .flip-card-front{
+	        width: 100%;
+	        height: 100%;
+	        border-radius: 20px;
+	        background-position: center;
+	        background-repeat: no-repeat;
+	        background-size: cover;
+	        position: absolute;
+	        backface-visibility: hidden;
+        }
+
+        .flip-card-back{
+	        width: 100%;
+	        height: 100%;
+	        border-radius: 20px;
+	        font-size: 1.00rem;
+	        text-align: center;
+	        display: grid;
+	        place-items: center;
+	        padding: 0px;
+	        background-color: #b4c2cc;
+	        position: absolute;
+	        transform: rotateY(180deg);
+	        backface-visibility: hidden;
+        }
+
+        .flip-card:hover .flip-card-inner{
+	        transform: rotateY(-180deg);
+        }
+
+        /*MISSION SECTION*/
+        .mission{
+	        display: flex;
+            background-size: cover;
+            background-color: #4c6f8a;
+            padding: 5px;
+            border-top: 0.5px;
+            border-top-style: outset;
+            border-top-color: rgba(255, 255, 255, .3); 
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            justify-items: center;
+            color: whitesmoke;
+            position: sticky;	
+        }
+
+        .img{
+	        display: flex;
+	        box-sizing: border-box;
+	        background-size: cover;
+	        width: 300px;
+	        height: 300px;
+	        align-items: center;
+            align-content: center;
+            justify-content: center;
+            justify-items: center;
+        }
+
+        .img img{
+	        background-size: cover;
+	        max-width: 100%;
+        }
+
+        .description{
+	       text-align: center;
+	       font-size: 15px;
+        }
+
+       .description h2{
+	       color: #292D32;
+        }
+
+        @media screen and (max-width: 920px){
+        	.cards-grid{
+        		flex-direction: column;
+        	}
+
+	        .description{
+		        font-size: 10px;
+		        margin-left: 0px;
+	        }
+
+	        .mission{
+		        flex-direction: column;
+		        justify-content: center;
+	            justify-items: center;
+	            align-items: center;
+	            align-content: center;
+	        }
+        }
+	</style>
+</head>
+
+<body>
+	<dialog id="popup" open>
+	<div class="popelements">
+		<p>Welcome to my web site</p>
+		<div class="popimage">
+		    <img src="images/officelayout.png" alt="null">
+	    </div>
+		<input type="button" value="Continue" onclick="document.getElementById('popup').close()">
+	</div>
+	</dialog>
+	<div class="primary">
+		<a href="resume.html" class="button"><span>Know More</span></a>
+	</div>
+	<div class="wrapper">
+	<header class="header"><img src="images/BackgroundMinor.png" alt="null" class="backgroundimg"><h2 class="logo">Raul<span>Gallegos</span></h2></header>
+	<nav>
+		<ul class="nav-ul">
+			<li class="nav-li"><a href="index.html" title="Home" class="nav-li-a">Home</a></li>
+			<li class="nav-li"><a href="resume.html" title="Resume" class="nav-li-a">Resume</a></li>
+			<li class="nav-li"><a href="https://raulgallegos.github.io/MAGICA/" title="Projects" target="_blank" class="nav-li-a">Projects</a></li>
+		</ul>
+	</nav>
+	<div class="container">
+	<main class="content">
+		<div class="cards-grid">
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front" style="background-image: url(images/CardHR.jpg);">
+					</div>
+					<div class="flip-card-back">
+                       Workforce Planning, Job Descriptions,
+                       Performance Evaluation, Coaching,
+                       Applicant Tracking System, Open HRMS,
+                       Taleo, Employee Development, SAP HCM,
+                       LegalLandscape, Training, Retention, 9Box,
+                       Talent Mapping, Psychometric Test,
+                       Interview, Motivation, Retention,
+                       Emotional Intelligence, Payroll 
+					</div>
+				</div>
+			</div>
+
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front" style="background-image: url(images/CardFinances.jpg);">
+					</div>
+					<div class="flip-card-back">
+                       Financial Statements 
+					   Design, Financial Statements 
+					   Analysis, Investment Project 
+					   Evaluation, Net Present Value NPV,
+					   Cost Planning, Sales, Acquisitions,
+					   Inventory, Invoicing, Excel,
+					   SAP MM, SAP SD, SAP FI, SAP CO
+					</div>
+				</div>
+			</div>
+
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front" style="background-image: url(images/CardQuality.jpg);">
+					</div>
+					<div class="flip-card-back">
+                       Total Quality Management, SixSigma,
+                       Quality Function Deployment QFD,
+                       Failure Mode and Effect Analysis
+                       FMEA, 5s, Kanban, Just In Time JIT,
+                       Statistical Process Control, Cause Effect Diagram,
+                       Stratification Analysis, Correlation, 
+                       Process Capability Indexes, OSHA,
+                       Risk Management, Time-Motion Analysis, 
+                       Value Stream Mapping, LegalLandscape,
+                       IMS ISO 9000, ISO 14000, ISO 50000
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="cards-grid">
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front" style="background-image: url(images/CardManagement.jpg);">
+					</div>
+					<div class="flip-card-back">
+                       Strategic Planning, Operations,
+                       Management Manual, Policies and
+                       Pocedures Manual, Project Design,
+                       Business Plan, Marketing Strategy,
+                       Market Segmentation, Industry Analysis,
+                       Enterprise Resource Planning Software ERP, Odoo, SAP, ETL,
+                       Data Mining, RapidMiner, KNIME,
+                       Predictive Analytics, Data Analysis ETL,
+                       Business Process Model and Notation
+                       BPMN, Process Modelling, Diversification Strategy,
+                       Contracts, Constitutive act
+					</div>
+				</div>
+			</div>
+
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front" style="background-image: url(images/CardEngineering.jpg);">
+					</div>
+					<div class="flip-card-back">
+                       Software Engineering, Programming,
+                       Use Case, Sequence Diagram, GitHub,
+                       Java, C++, HTML, CSS, UML, Workbench,
+                       Enterprice Architec, Visual Paradigm,
+                       Cisco Configuration Management, Macros,
+                       Network Design, Router Configuration 
+                       Subnetting, DataBase Administrator,
+                       PostgreSQL, Microsoft SQL Server,
+                       Oracle MySQL, Visual Basic VBA,
+                       AI Tools
+					</div>
+				</div>
+			</div>
+
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front" style="background-image: url(images/CardDesign.jpg);">
+					</div>
+					<div class="flip-card-back">
+                       Web Design, Vector Graphics Design,
+                       Adobe Dreamweaver, Adobe Illustrator, 
+                       Inkscape, 3D Digital Design, Autodesk 
+                       3ds Max, Autodesk Maya, Blender, Unity,
+                       Cinema 4d, Adobe Animate, Publicity, 
+                       Product Design, CorelDraw
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+    </div>
+
+    <section class="mission">
+		<div class="img">
+			<img src="images/CardMissionVision.png" alt="null">
+		</div>
+		<div class="description">
+			<h2>Mission</h2>
+			<p>Achieve all my goals being effective and efficient</p>
+		    <p>not having trivial thoughts but innovative ideas </p>
+		    <h2>Vision</h2>
+	        <p>Managing my own business applying knowledge</p>
+		    <p>i have acquired establishing then my</p>
+		    <p>professional realization</p>
+		</div>
+	</section>
+
+    <section class="links">
+		<table class="table">
+			<tr>
+				<td>
+					<ul>
+						<li>Relevant Links</li>
+						<li><a href="indexespanol.html" title="Home">Home</a></li>
+						<li><a href="curriculum.html" title="Resume">Resume</a></li>
+						<li><a href="https://raulgallegos.github.io/MAGICA/" title="Projects" target="_blank">Projects</a></li>
+						<li>Social Network</li>
+						<li><a href="https://mx.linkedin.com/in/raul-gallegos-53bb5687" title="LinkedIn">LinkedIn</a></li>
+					</ul>
+				</td>
+			</tr>
+		</table>
+
+		<div class="contact">
+			<p>Please Contact me</p>
+			<p><img src="images/phone.png" alt="null" class="icon"> Phone Number</img></p>
+			<p>+52 (993)1965663</p>
+		    <p><img src="images/email.png" alt="null" class="icon"/> Email</img></p>
+		    <p>Raul_Gallegos@msn.com</p>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<small>©Copyright 2025 Raul Gallegos Contreras</small><br>
+		<a href="index.html" title="English">English</a> | <a href="indexespanol.html" title="Español">Español</a>
+	</footer>
+    </div>
+    <a class="gotopbtn" href="#"><img src="images/upArrow.png"/></a>
+</body>
+</html>
